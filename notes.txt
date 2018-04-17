@@ -1,0 +1,173 @@
+Day 1
+-----
+Version - ES6
+
+HTML
+CSS
+JavaScript
+
+History
+-------
+1997 - ES1 - EcmaScript 
+1998 - ES2
+1999 - ES3 - 
+       ES4 - 
+2009 - ES5 - Most popular and most widley available
+2011 - ES5.1 - 
+2015 - ES6 [Significant update]
+2016 - ES7
+2017 - ES8
+2018 - ES9
+
+------------------------------------------------------------------------------
+alphabets - character set (a-z, A-Z, special characters)
+words - keywords ( these words special meaning )[var, let, const, function etc.]
+sentences - statements , console.log("Welocme to JS");
+paragraphs - program 
+chapters - projects
+books
+
+grammar - syntax 
+
+variables
+---------
+named container - it holds a value
+
+username
+age
+height
+weight
+dob
+friends
+
+
+Data Types
+----------
+primitive
+---------
+string
+number
+boolean
+null
+undefined
+symbol
+
+reference
+--------
+object
+array
+
+
+typeof operator
+
+statements
+----------
+var x1,x2,x3;
+x=5;
+y=9;
+var z = x + y;
+
+program
+comments
+
+Operators
+---------
+Arthimetic
+Assignment
+string
+Comparison / relational
+Logical Operators
+Condition Operators
+Bitwise
+typeof 
+
+Arthimetic Operators:
+--------------------
++
+-
+*
+/
+%
+++
+--
+
+Assignment Operators
+--------------------
+=
++=
+-=
+*=
+/=
+%=
+
+string
+------
++ ( concatenation )
+
+comparison / relational
+-----------------------
+==
+===
+!=
+!==
+>
+<
+>=
+<=
+
+ternary
+-------
+?:
+
+Logical Operators
+-----------------
+&&
+||
+!
+
+Bitwise
+-------
+&
+|
+~
+^
+<<
+>>
+
+
+&
+0101
+0001
+----
+0001
+
+|
+0101
+0001
+----
+0101
+
+~
+0101 => 1010
+
+^
+0101
+0001
+----
+0100
+
+<<
+0101 << 1 => 1010
+
+>>
+
+0101 >> 1 => 0010
+
+
+Template string
+---------------
+
+
+
+
+
