@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function sayHello(name) {
+        //     console.log("hello, " + name);
+        //     return "Hello, " + name;
+        // }
+
+        // sayHello("James")
+        // sayHello("Mary")
+        // sayHello("Kim")
+        // var message = sayHello("Jim")
+        // console.log(message);
+
+        // function toClesius(fahrenhiet) {
+        //     var tempInClesius = (5 / 9) * (fahrenhiet - 32)
+        //     return tempInClesius
+        // }
+
+        // var temp = toClesius(77);
+        // console.log(temp);
+
+        // function getName() {
+        //     return "zeo";
+        // }
+
+        // console.log(getName());
+
+        // function add(a, b) {
+        //     var c = a + b;
+        //     return c;
+        // }
+
+        // console.log(add(10, 20));
+
+        // var newAdd = add;
+        // console.log(newAdd(10, 20));
+
+        // //anonymous functions
+
+        // var sub = function (a, b) {
+        //     return a - b;
+        // }
+
+        // console.log(sub(100, 20));
+
+        var add = function (a, b, callback) {
+            var c = a + b;
+            callback(c);
+        }
+
+        function print(c) { // callback
+            console.log(c);
+        }
+
+        add(10, 20, print)
+
+        function factory(a) {
+
+            function inner(b) { //inner function
+                console.log(a + b);
+            }
+            return inner;
+        }
+
+        var myFunc = factory(10);
+        console.log(myFunc(20));
+    </script>
+</body>
+
+</html>

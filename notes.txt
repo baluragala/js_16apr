@@ -167,6 +167,89 @@ Bitwise
 Template string
 ---------------
 
+arrays
+-----
+holds mutiple values
+accessed using index which starts at 0
+[] or new Array();
+[index]
+length
+
+push
+pop
+
+shift
+unshift
+
+slice
+splice
+
+concat
+
+Objects
+-------
+2 syntax
+
+1. object literal ( { })
+2. using new keyword on constructor function
+
+
+functions
+---------
+first class citizen
+define function
+    named
+    anonymous
+
+function expression
+invoke function / calling function
+optional args / parameters
+optional return statement
+function as parameter to another function - callback
+return function from another function
+
+scope
+-----
+accessibility / visibity of variables
+
+2 scopes
+-------
+    1. local scope
+    2. global scope 
+
+block scoped - let & const
+function scoped - var 
+
+
+"use strict"
+
+conditional statements
+----------------------
+if
+if else
+if else if
+switch
+
+
+loop statements
+---------------
+for
+for in ( ES 5 )
+for of ( ES 6 )
+while
+do while 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let myGlobalVariable = 'global';
+
+        function calculatePrice(price, tax) {
+            {
+                myGlobalVariable = 'c';
+                let finalPrice = price + (price * tax / 100)
+                finalPrice = 10;
+            }
+            //console.log(finalPrice);
+        }
+
+        function calculateExchangePrice(price, tax) {
+            var finalPrice = price + (price * tax / 100)
+        }
+
+        calculatePrice(100, 3);
+        //console.log(finalPrice);
+    </script>
+</body>
+
+</html>

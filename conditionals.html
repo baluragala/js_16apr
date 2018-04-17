@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var age = 22;
+        if (age > 18) {
+            console.log('Eligible to vote')
+        } else {
+            console.log('not eligible to vote')
+        }
+
+        // greatest of 3 numbers
+        var n1 = 10,
+            n2 = 5,
+            n3 = 40;
+
+        if (n1 > n2 && n1 > n3) {
+            console.log('n1 is great')
+        } else if (n2 > n1 && n2 > n3) {
+            console.log('n2 is great')
+        } else {
+            console.log('n3 is great')
+        }
+
+        //switch
+
+        /*
+            0 - OK
+            1 - WARN
+            2 - ERROR
+            3 - CRITICAL
+        */
+        var status = 'C';
+
+        if (status == 0) {
+            console.log('OK')
+        } else if (status == 1) {
+            console.log('WARN')
+        } else if (status == 2) {
+            console.log('ERROR')
+        } else if (status == 3) {
+            console.log('CRITICAL')
+        }
+
+        switch (status) {
+            case "A":
+                console.log('OK');
+                break;
+            case "B":
+                console.log('WARN');
+                break;
+            case "C":
+                console.log('ERROR');
+                break;
+            case "D":
+                console.log('CRITICAL');
+                break;
+            default:
+                console.log('UNKNOWN STATUS');
+        };
+    </script>
+</body>
+
+</html>
