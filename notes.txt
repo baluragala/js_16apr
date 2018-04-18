@@ -178,6 +178,8 @@ length
 push
 pop
 
+Day 2
+-----
 shift
 unshift
 
@@ -237,6 +239,10 @@ for
 for in ( ES 5 )
 for of ( ES 6 )
 while
+
+while (condition)
+  statement
+
 do while 
 
 

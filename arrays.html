@@ -45,9 +45,31 @@
         // var fruits = [].concat(fruits1, fruits2, ["dragon fruit"]);
         // console.log(fruits);
 
-        var fruits2 = ["strawberry", "orange", "chikoo", "berry", "gauav"];
-        console.log(fruits2.slice(0, 2))
-        console.log(fruits2);
+        // var fruits2 = ["strawberry", "orange", "chikoo", "berry", "gauav"];
+        // console.log(fruits2.slice(0, 2))
+        // console.log(fruits2);
+        var fruits2 = ["strawberry", "orange", "chikoo", "orange", "berry", "gauav", ];
+
+        // let r = fruits2.filter(function filter6(f) {
+        //     return f.length >= 6
+        // })
+
+        let r = fruits2.find(function (f) {
+            return f.length <= 6
+        })
+
+        let ri = fruits2.findIndex(function (f) {
+            return f.length <= 6
+        })
+
+        let upperFruits = fruits2.map(function (f) {
+            return f.toUpperCase()
+        })
+
+        console.log(fruits2.includes("orange", 4));
+
+        console.log(Array.isArray({}))
+        console.log(upperFruits)
     </script>
 </body>
 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let t = {
+        //     name: 'zeo',
+        //     age: 20,
+        //     toString: function () {
+        //         return t.name + "," + t.age
+        //     }
+        // }
+        let t = new Date();
+        let t0 = new Date(1524068189 * 1000);
+        console.log(t0.toString())
+        let t1 = new Date("2017-09-11T13:00:23");
+        console.log(t1.toString())
+        let t2 = new Date(2017, 8, 11, 13, 00, 23, 199);
+        console.log(t2.toString())
+        console.log(t.getDate())
+        console.log(t.getDay())
+        console.log(t.getFullYear())
+        console.log(t.getHours())
+        console.log(t.getMinutes())
+        console.log(t.getSeconds())
+        console.log(t.getMonth())
+        console.log(t.getTime())
+        console.log(t.getUTCDate())
+        console.log(t.getUTCDay())
+        console.log(t.getUTCFullYear())
+        console.log(t.getUTCMinutes())
+        console.log(t.getUTCHours())
+        console.log(new Date(t.setDate(22)))
+        console.log(new Date(t.setFullYear(2020)))
+        console.log(t.toDateString())
+        console.log(t.toTimeString())
+        console.log(t.toLocaleTimeString())
+    </script>
+</body>
+
+</html>

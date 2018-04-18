@@ -13,11 +13,32 @@
         var product = {
             title: 'mac book',
             price: 2000,
-            stock: 200
+            stock: 200,
+            ["###############"]: [],
+            info: function () {}
         } // literal syntax
         var customer = new Object(); // constructor function
         product.title = 'dell xps';
-        console.log(product.title);
+        console.log(product["info"]());
+
+        //constructor function
+
+        function Person(name, age, height) {
+            this.name = name;
+            this.age = age;
+            this.height = height;
+            this.me = function () {
+                console.log(this);
+            }
+        }
+
+        let james = new Person("james", 20, 160);
+        let kim = new Person("kim", 22, 154)
+        console.log(james.name);
+        console.log(kim.name);
+        console.log(james.me());
+        console.log(kim.me());
+        console.log(james.toString())
     </script>
 </body>
 

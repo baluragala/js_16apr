@@ -10,8 +10,64 @@
 
 <body>
     <script>
-        for (let i = 1; i <= 50; i++) {
-            console.log(i)
+        // for (let i = 1; i <= 50; i++) {
+        //     console.log(i)
+        // }
+        let numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+
+        // for (let i = 0; i < numbers.length; i++) {
+        //     console.log(`Element at index ${i} is ${numbers[i]}`)
+        // }
+
+        // for (let i = numbers.length - 1; i >= 0; i--) {
+        //     console.log(`Element at index ${i} is ${numbers[i]}`)
+        // }
+
+        // let i = 0;
+        // while (i < numbers.length) {
+        //     console.log(`Element at index ${i} is ${numbers[i]}`)
+        //     i++;
+        // }
+        // console.log('----------------------------------')
+        // let j = numbers.length - 1;
+        // while (j >= 0) {
+        //     console.log(`Element at index ${j} is ${numbers[j]}`)
+        //     j--;
+        // }
+
+        // let i = 0;
+        // do {
+        //     console.log(`Element at index ${i} is ${numbers[i]}`)
+        //     i++;
+        //     if (i > 2)
+        //         break;
+        // } while (true)
+
+        // for (let i = 0; i < numbers.length; i++) {
+        //     if (numbers[i] % 20 == 0)
+        //         continue;
+        //     console.log(`Element at index ${i} is ${numbers[i]}`)
+        // }
+
+        let userInterface = {
+            width: 1080,
+            height: 1920,
+            orientation: 'PORTRAIT'
+        }
+
+        // let keys = Object.keys(userInterface);
+        // for (let i = 0; i < keys.length; i++) {
+        //     let propertyName = keys[i];
+        //     console.log(`${propertyName} : ${userInterface[propertyName]}`);
+        // }
+
+        for (let propertyName in userInterface) {
+            //let propertyName = keys[i];
+            console.log(`${propertyName} : ${userInterface[propertyName]}`);
+        }
+
+        for (let n of numbers) {
+            console.log(n)
         }
     </script>
 </body>

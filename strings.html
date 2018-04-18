@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //let username = new String("welcome to zeolearn    ");
+        let username = "welcome to zeolearn    ";
+        for (let c of username) {
+            console.log(c)
+        }
+        let cl = console.log;
+        cl(username.toUpperCase());
+        cl(username.toLowerCase());
+        cl(username.endsWith("n"));
+        cl(username.startsWith("z"));
+        cl("start".concat("hello", "world", "welcome"))
+        cl(username.charAt(110))
+        cl(username.charCodeAt(0))
+        cl(String.fromCharCode(122, 68))
+        cl(username.indexOf("e", 4))
+        cl(username.split(" "))
+        cl(username.slice(-2))
+        cl(username.substr(1, 4))
+        console.log(username.substring(1, 4))
+        console.log(username.length)
+        console.log(username.trim().length)
+    </script>
+</body>
+
+</html>
