@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prototype</title>
+</head>
+
+<body>
+    <script>
+        /*
+            Animal
+                <- chordate
+                <- mammal
+        */
+
+        // function Animal(name) {
+        //     this.name = name;
+        //     this.shout = function () {
+        //         console.log("Animal shouts", this)
+        //     }
+        // }
+        // function Chordate(name) {
+        //     this.name = name;
+        // }
+
+        // Chordate.prototype = new Animal();
+
+        // function Mammal(name) {
+        //     this.name = name;
+        // }
+
+        // Mammal.prototype = new Chordate();
+
+        // var m = new Mammal("foo");
+
+        class Animal {
+            constructor(name) {
+                this.name = name;
+            }
+            shout() {
+                console.log("Animal shouts", this)
+            }
+        }
+
+        class Chordate extends Animal {
+            constructor(name) {
+                super(name);
+            }
+        }
+
+        class Mammal extends Chordate {
+            constructor(name) {
+                super(name)
+            }
+        }
+
+        var m = new Mammal("foo");
+    </script>
+</body>
+
+</html>

@@ -245,11 +245,27 @@ while (condition)
 
 do while 
 
+Objects
+--------
+literal syntax
+constructor function
 
+ES6 -> class -> syntactical sugar on top of constructor function
 
+context
+-------
+this
+- new keyword creates a new context ( means new this value)
 
+every function has call, apply and bind 
 
+prototype - simplified with ES6
 
+ES6 Syntaxes
+------------
+scoping - var , let and const
+arrow function
+spread operator and rest operator
 
 
 

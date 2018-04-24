@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn1">CLICK ME!!!!</button>
+    <button id="btn2">CLICK ME!!!!</button>
+    <button id="btn3">CLICK ME!!!!</button>
+    <script>
+
+
+        let p = new Person("James", 23);
+        console.log(p.describe())
+
+        let btn1 = document.querySelector("#btn1");
+        let btn2 = document.querySelector("#btn2");
+        let btn3 = document.querySelector("#btn3");
+
+        console.log(btn1);
+        let changeColor = function (colorName) {
+            console.log(this);
+            this.style.backgroundColor = colorName;
+        }
+
+        btn1.addEventListener("click", function () {
+            changeColor.call(this, "yellow")
+        })
+        btn2.addEventListener("click", function () {
+            changeColor.call(this, "red")
+        })
+        btn3.addEventListener("click", function () {
+            changeColor.call(this, "green")
+        })
+
+
+
+        let filter6 = function (n) {
+            return n > 6
+        }
+
+        let filter6Arrow = n => n > 6
+
+        const scores = [60, 40, 56, 77, 89];
+        scores.filter(score => score > 60);
+
+        const add = (a, b) => {
+            let c = a + b;
+            return c;
+        }
+
+        class Person {
+            constructor(uname, age) {
+                this.uname = uname;
+                this.age = age;
+                this.describe = () => {
+                    return " A person named " + this.uname + " is aged " + this.age + " years";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
