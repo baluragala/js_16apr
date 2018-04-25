@@ -267,7 +267,49 @@ scoping - var , let and const
 arrow function
 spread operator and rest operator
 
+Day 5
+-----
+object literal improvements
+getter and setters
+static
 
+iterables & iterator
+
+protocols -> interfaces
+
+arrays
+strings
+maps
+
+iterator
+-------
+object that provides next()
+when next() is called you get iterator result 
+iterator result is an object -> {value, done}
+
+template strings
+----------------
+``
+
+
+destructuring
+-------------
+array [] - based on index
+object {} - based on key
+
+
+async programming
+-----------------
+sequential / synchronous
+non-sequential / asynchronous
+
+single threaed nature of JS
+event loop
+
+callbacks
+promises
+generators
+async / await
 
 
 

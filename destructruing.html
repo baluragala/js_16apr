@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let team = ["james", "jim", "kim", "cary", 'mary']
+        // let manager = team[0];
+        // let lead = team[1];
+        // let others = team.slice(2, team.length)
+
+        let [manager, lead, , ...others] = team;
+        console.log(manager, lead, others)
+
+        let apiResponse = { "username": "baluragala", "url": "https://github.com/baluragala", "type": "paid" };
+
+        let { username, url: link = "not available" } = apiResponse;
+        console.log(username, link);
+
+        let order = {
+            id: 123,
+            customerName: 'Jim',
+            shippingAddress: {
+                state: 'NY',
+                city: 'new york'
+            }
+        }
+
+        let { customerName: name, shippingAddress: { city: cityName } } = order;
+
+        console.log(name, cityName)
+
+    </script>
+</body>
+
+</html>

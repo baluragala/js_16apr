@@ -24,6 +24,52 @@
             return message + ":" + total;
         }
 
+        let width = 1080, height = 1920, mode = 'PORTRAIT'
+
+
+        let screen = {
+            width,
+            height,
+            mode,
+            switchOn() {
+            },
+            [width + "_" + height + "_" + mode]: "id",
+            get Width() {
+                return width + " px";
+            }
+        }
+        let propertyName = "width";
+        console.log(screen.Width)
+        console.log(screen[propertyName])
+        console.log(screen);
+
+        const Car = class {
+            static getClassName() {
+                return "Car"
+            }
+            constructor() {
+
+            }
+
+            get price() {
+                console.log('Getter is executing')
+                return this._price + " USD";
+            }
+
+            set price(val) {
+                console.log('Setter is executing')
+                if (val < 0) {
+                    throw new Error("Price cannot be negative")
+                }
+                this._price = val;
+            }
+        }
+
+        let bmw = new Car();
+        bmw.price = 60000;
+        console.log(bmw.price);
+        //console.log(bmw.getClassName());
+        console.log(Car.getClassName())
 
     </script>
 </body>
