@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Creating Element</title>
+</head>
+
+<body>
+    <script>
+
+        // var h1 = document.createElement("h1")
+
+        // h1.innerText = "Welcome to DOM"
+
+        // document.body.appendChild(h1)
+
+        // document.body.removeChild(h1)
+
+        // var anotherh1 = document.createElement("h1")
+
+        // anotherh1.innerText = "A new H1 element";
+
+        // document.body.appendChild(h1)
+
+        // document.body.replaceChild(h1, anotherh1)
+
+        // document.body.replaceChild(anotherh1, h1)
+
+
+
+
+
+
+
+        let outerDiv = document.createElement("div");
+        outerDiv.setAttribute("id", "main")
+        outerDiv.setAttribute("title", "simple div")
+        outerDiv.setAttribute("style", "border:1px solid red")
+
+        let outerH1 = document.createElement("h1");
+        let outerp1 = document.createElement("p");
+        let outerp2 = document.createElement("p");
+
+        outerDiv.appendChild(outerH1);
+        outerDiv.appendChild(outerp1);
+        outerDiv.appendChild(outerp2);
+
+        let innerDiv = document.createElement("div");
+        let innerH3 = document.createElement("h3");
+        let innerp1 = document.createElement("p");
+
+        innerDiv.appendChild(innerH3);
+        innerDiv.appendChild(innerp1);
+
+        outerDiv.appendChild(innerDiv)
+
+        document.body.appendChild(outerDiv);
+
+        // finding elements
+        /*
+            by id
+            by tag name
+            by class name
+            by css selectors
+
+        */
+
+        //document.getElementById("main").innerText = "Found via getElementById"
+
+        let ptags = document.getElementsByTagName("p");
+        for (let p of ptags) {
+            console.log(p);
+            p.className = "para"
+        }
+
+        document.querySelector("h1 + p")
+        document.querySelectorAll("h1 + p")
+
+
+    </script>
+</body>
+
+</html>
