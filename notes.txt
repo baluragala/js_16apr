@@ -311,7 +311,13 @@ promises
 generators
 async / await
 
+Why single thread?
 
+HTML
+CSS
+JS
+
+Inside a browser - process - 
 
 
 
