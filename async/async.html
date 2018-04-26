@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const goGetMilk = () =>
+            new Promise((resolve, reject) => setTimeout(resolve("Got Milk"), 2000));
+
+        const boilMilk = () =>
+            new Promise((resolve, reject) => setTimeout(resolve("Milk boiled"), 1000));
+
+        const mixSugarAndCoffeePowder = () =>
+            new Promise((resolve, reject) => setTimeout(resolve("coffee done"), 500));
+
+        async function makeCoffee() {
+            let m1 = await goGetMilk();
+            console.log(m1)
+            let m2 = await boilMilk();
+            console.log(m2);
+            let m3 = await mixSugarAndCoffeePowder();
+            console.log(m3);
+        }
+
+        makeCoffee().then(_ => console.log("done"));
+    </script>
+</body>
+
+</html>

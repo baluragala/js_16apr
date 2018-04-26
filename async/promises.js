@@ -32,3 +32,23 @@ goGetMilk()
     return mixSugarAndCoffeePowder();
   })
   .then(message => console.log(message));
+
+//-- multiple promises
+
+let p1 = new Promise((resolve, reject) => {
+  setTimeout(() => resolve("p1 resolved"));
+});
+
+let p2 = new Promise((resolve, reject) => {
+  setTimeout(() => resolve("p2 resolved"));
+});
+
+let p3 = new Promise((resolve, reject) => {
+  setTimeout(() => resolve("p3 resolved"));
+});
+
+let p4 = new Promise((resolve, reject) => {
+  setTimeout(() => resolve("p4 resolved"));
+});
+
+Promise.all([[[p1, p2, p3, p4]]]).then(results => console.log(results));
