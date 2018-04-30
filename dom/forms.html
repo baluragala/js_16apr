@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Add Product</legend>
+        <form novalidate>
+            <div>
+                <label>Product Name:</label>
+                <input type="text" name="productName" required />
+            </div>
+            <div>
+                <label>Product Desc:</label>
+                <textarea rows="5" cols="120" name="productDesc" required></textarea>
+            </div>
+            <button type="submit">Save</button>
+        </form>
+    </fieldset>
+
+    <script>
+        let form = document.querySelector("form");
+        let productName = document.querySelector("[name='productName']");
+        let productDesc = document.querySelector("[name='productDesc']");
+
+        productName.addEventListener("input", function (e) {
+            let validationError = document.createElement("p");
+            validationError.id = "productNameError";
+            validationError.style.color = 'red';
+            validationError.innerText = 'Product Name is required';
+            if (e.target.value.trim().length > 0) {
+                let p = document.querySelector("#productNameError");
+                if (p) { productName.parentNode.removeChild(p) }
+            } else {
+                productName.parentNode.appendChild(validationError)
+            }
+        })
+
+        form.addEventListener("submit", function (e) {
+            console.log(e);
+            e.preventDefault();
+
+            if (productName.value.trim().length == 0) {
+
+            }
+
+            console.log(productDesc.value);
+        })
+
+    </script>
+</body>
+
+</html>

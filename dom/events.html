@@ -11,6 +11,13 @@
 
 <body>
     <button>ON</button>
+    <a href="google.com" name="googlelink">Google</a>
+    <form name="loginform">
+
+    </form>
+    <form name="signup">
+
+    </form>
     <script>
         let counter = 1;
         function toggleSwitch(args) {
@@ -28,7 +35,12 @@
             }
         }
 
+        function logger(e) {
+            console.log(e);
+        }
+
         document.querySelector("button").addEventListener("click", toggleSwitch);
+        document.querySelector("button").addEventListener("click", logger);
     </script>
 </body>
 

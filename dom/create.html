@@ -41,16 +41,22 @@
         outerDiv.setAttribute("style", "border:1px solid red")
 
         let outerH1 = document.createElement("h1");
+        outerH1.innerText = "H1"
         let outerp1 = document.createElement("p");
+        outerp1.innerText = "outer para1"
         let outerp2 = document.createElement("p");
+        outerp2.innerText = "outer para2"
 
         outerDiv.appendChild(outerH1);
         outerDiv.appendChild(outerp1);
         outerDiv.appendChild(outerp2);
 
         let innerDiv = document.createElement("div");
+
         let innerH3 = document.createElement("h3");
+        innerH3.innerText = "h3";
         let innerp1 = document.createElement("p");
+        innerp1.innerText = "inner para1";
 
         innerDiv.appendChild(innerH3);
         innerDiv.appendChild(innerp1);
@@ -79,6 +85,9 @@
         document.querySelector("h1 + p")
         document.querySelectorAll("h1 + p")
 
+        let newPara = document.createElement("p");
+        newPara.innerText = "New para";
+        innerDiv.insertBefore(newPara, innerp1)
 
     </script>
 </body>

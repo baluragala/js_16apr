@@ -5,3 +5,5 @@ DOM - Document Object Model
 JS
 DOM ( created browser)
 HTML
+
+closure ?
