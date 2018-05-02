@@ -319,6 +319,10 @@ JS
 
 Inside a browser - process - 
 
+Modules
+-------
+require.js
+ESM - EcmaScript Modules - ES2015
 
 
 

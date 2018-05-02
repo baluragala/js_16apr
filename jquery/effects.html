@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <p>Click me to hide</p>
+    <button>Hide Para</button>
+    <button>Fade In</button>
+    <button>Fade Out</button>
+    <button>Fade Toggle</button>
+    <button>Slide Down</button>
+    <button>Slide Up</button>
+    <button>Slide Toggle</button>
+    <button>Stop</button>
+    <script>
+        $(function () {
+            $("button").click(function () {
+
+                if ($(this).text().startsWith("Stop")) {
+                    $("p").stop();
+                    return;
+                }
+
+                if ($(this).text().startsWith("Slide Down")) {
+                    $("p").slideDown(5000);
+                    return;
+                }
+
+                if ($(this).text().startsWith("Slide Up")) {
+                    $("p").slideUp(5000);
+                    return;
+                }
+
+                if ($(this).text().startsWith("Slide Toggle")) {
+                    $("p").slideToggle(5000);
+                    return;
+                }
+
+
+                if ($(this).text().startsWith("Fade In")) {
+                    $("p").fadeIn(500);
+                    return;
+                }
+
+                if ($(this).text().startsWith("Fade Out")) {
+                    $("p").fadeOut(500);
+                    return;
+                }
+
+                if ($(this).text().startsWith("Fade Toggle")) {
+                    $("p").fadeToggle(500);
+                    return;
+                }
+
+
+                if ($(this).text().startsWith("Hide")) {
+                    $("p").hide(500, function () {
+                        $(this).text("Show Para")
+                    }.bind(this));
+
+                } else {
+                    $("p").show(500, function () {
+                        $(this).text("Hide Para")
+                    }.bind(this));
+
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

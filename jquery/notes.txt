@@ -1,0 +1,64 @@
+
+$(selector).action()
+
+selectors
+---------
+element -> p, h1, div, body, tr, td etc.,
+id -> #p1, #p2, #main
+class -> .main, p.info
+p:first
+
+Get
+---
+html()
+text()
+val()
+
+Set
+---
+html(val)
+text(val)
+val(val)
+
+Add
+---
+append
+prepend
+after
+before
+
+Remove
+------
+remove 
+empty
+
+
+Traversing
+----------
+child -> ancestor -> parent(), parents() , parentsUntil()
+parent -> child -> children(), find()
+
+Events
+------
+
+effects
+-------
+hide
+show
+fade
+    fadeIn
+    fadeOut
+    fadeToggle
+    fadeTo
+slide
+    slideDown
+    slideUp
+    SlideToggle
+
+filtering
+---------
+first
+last
+eq
+not
+filter

@@ -7,3 +7,15 @@ DOM ( created browser)
 HTML
 
 closure ?
+
+AJAX
+----
+Asynchronus JavaScrpit and XML
+
+
+1. jquery http client
+2. fetch - native http client
+3. axios - 
+
+modules
+------

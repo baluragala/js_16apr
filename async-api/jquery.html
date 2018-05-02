@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+</head>
+
+<body>
+    <button id="get_user">Get User Info</button>
+    <button id="get_user_fetch">Get User Info(fetch)</button>
+    <button id="get_user_axios">Get User Info(axios)</button>
+    <script>
+
+        //WHATWG
+        document.querySelector("#get_user").addEventListener('click', function () {
+            $.get("https://api.github.com/users/baluragala", function (data, status) {
+                let div = document.createElement("div");
+                let h3 = document.createElement("h3");
+                h3.innerText = data.login;
+                div.appendChild(h3);
+                document.body.appendChild(div);
+            })
+        })
+
+        document.querySelector("#get_user_fetch").addEventListener('click', function () {
+
+            fetch("https://api.github.com/users/baluragala")
+                .then(response => response.json())
+                .then(data => {
+                    let div = document.createElement("div");
+                    let h3 = document.createElement("h3");
+                    h3.innerText = data.login;
+                    div.appendChild(h3);
+                    document.body.appendChild(div);
+                })
+        })
+
+        document.querySelector("#get_user_axios").addEventListener('click', async function () {
+            try {
+                let response = await axios.get("https://api.github.com/users/baluragala")
+                let { data } = response;
+                let div = document.createElement("div");
+                let h3 = document.createElement("h3");
+                h3.innerText = data.login;
+                div.appendChild(h3);
+                document.body.appendChild(div);
+            } catch (err) {
+                console.log(err);
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>
