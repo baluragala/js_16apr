@@ -1,0 +1,77 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [],
+  "products": [
+    {
+      "name": "Mac book pro v3",
+      "price": "3000",
+      "stock": "10",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Dell XPS",
+      "desc": "A laptop by dell",
+      "price": 1200,
+      "stock": 200
+    },
+    {
+      "name": "Aspire",
+      "desc": "A laptop by lenovo",
+      "price": "1234",
+      "stock": "123",
+      "id": 3
+    },
+    {
+      "name": "Laptop1",
+      "desc": "Custom laptop",
+      "price": "800",
+      "stock": "20",
+      "id": 4
+    },
+    {
+      "name": "wwww www",
+      "desc": "www wwww sss ",
+      "price": "11",
+      "stock": "111",
+      "id": 5
+    },
+    {
+      "name": "wsdasda asd asd",
+      "desc": " asdadasd ad asdad",
+      "price": "22",
+      "stock": "211",
+      "id": 6
+    },
+    {
+      "name": "qqqq",
+      "desc": "qqq",
+      "price": "222",
+      "stock": "22",
+      "id": 7
+    },
+    {
+      "name": "dsfsfaf",
+      "desc": "asdfasdfa",
+      "price": "21",
+      "stock": "11",
+      "id": 8
+    }
+  ]
+}
